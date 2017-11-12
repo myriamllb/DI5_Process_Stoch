@@ -73,7 +73,7 @@ public class SaisieInfo {
                         Px=mm1.calculProbabilite(clientPresent);
                     }
                     else{
-                        showMessageDialog(null,"Rho est supérieur ou égale à 1");
+                        showMessageDialog(null,"Rho est supérieur ou égale à 1. Le système va donc être engorgé.");
                     }
 
                     JFrame affichage= new JFrame("Affichage des résultats");
@@ -103,7 +103,7 @@ public class SaisieInfo {
                         Px=mm1k.calculProbabilite(clientPresent);
                     }
                     else{
-                        showMessageDialog(null,"Rho est supérieur ou égale à 1");
+                        showMessageDialog(null,"Rho est supérieur ou égale à 1. Le système va donc être engorgé.");
                     }
 
                     JFrame affichage= new JFrame("Affichage des résultats");
@@ -133,7 +133,7 @@ public class SaisieInfo {
                         Px=mms.calculProbabilite(clientPresent);
                     }
                     else{
-                        showMessageDialog(null,"Rho est supérieur ou égale à 1");
+                        showMessageDialog(null,"Rho est supérieur ou égale à 1. Le système va donc être engorgé.");
                     }
 
                     JFrame affichage= new JFrame("Affichage des résultats");
@@ -162,7 +162,7 @@ public class SaisieInfo {
         modelSpinner = new SpinnerNumberModel(1, 1, 10000, 1);
         serveurSysteme=new JSpinner(modelSpinner);
 
-        modelSpinner = new SpinnerNumberModel(1, 1, 10000, 1);
+        modelSpinner = new SpinnerNumberModel(1, 1, 10000, 0.01);
         tempsMax=new JSpinner(modelSpinner);
 
         modelSpinner = new SpinnerNumberModel(0, 0, 10000, 1);
