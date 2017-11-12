@@ -76,7 +76,7 @@ public class SaisieInfo {
                         showMessageDialog(null,"Rho est supérieur ou égale à 1. Le système va donc être engorgé.");
                     }
 
-                    JFrame affichage= new JFrame("Affichage des résultats");
+                    JFrame affichage= new JFrame("Affichage des résultats M|M|1");
                     affichage.setContentPane(new AffichageResultat(Ro,L,Lq,W,Wq,Pt,duree,Px,clientPresent).getPanel());
                     affichage.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                     affichage.setSize(750,600);
@@ -106,7 +106,7 @@ public class SaisieInfo {
                         showMessageDialog(null,"Rho est supérieur ou égale à 1. Le système va donc être engorgé.");
                     }
 
-                    JFrame affichage= new JFrame("Affichage des résultats");
+                    JFrame affichage= new JFrame("Affichage des résultats M|M|1|"+nbClientMax);
                     affichage.setContentPane(new AffichageResultat(Ro,L,Lq,W,Wq,Pt,duree,Px,clientPresent).getPanel());
                     affichage.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                     affichage.setSize(750,600);
@@ -136,7 +136,7 @@ public class SaisieInfo {
                         showMessageDialog(null,"Rho est supérieur ou égale à 1. Le système va donc être engorgé.");
                     }
 
-                    JFrame affichage= new JFrame("Affichage des résultats");
+                    JFrame affichage= new JFrame("Affichage des résultats M|M|"+nbServeurSysteme);
                     affichage.setContentPane(new AffichageResultat(Ro,L,Lq,W,Wq,Pt,duree,Px,clientPresent).getPanel());
                     affichage.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
                     affichage.setSize(750,600);
@@ -168,7 +168,7 @@ public class SaisieInfo {
         modelSpinner = new SpinnerNumberModel(0, 0, 10000, 1);
         nbClientPresent=new JSpinner(modelSpinner);
 
-        modelSpinner = new SpinnerNumberModel(0, 0, 10000, 1);
+        modelSpinner = new SpinnerNumberModel(1, 1, 10000, 1);
         nbClient=new JSpinner(modelSpinner);
 
     }
